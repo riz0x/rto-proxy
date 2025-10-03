@@ -8,7 +8,7 @@ app.get('/vehicle/:number', async (req, res) => {
   const number = req.params.number;
 
   try {
-    const response = await axios.get(`https://santosh-production.up.railway.app/api/vehicle/${number}`);
+    const response = await axios.get(`https://santosh-vercel.vercel.app/api/vehicle/${number}`);
     res.json(response.data);
   } catch (error) {
     console.error(error);
